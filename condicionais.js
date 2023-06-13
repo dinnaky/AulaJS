@@ -12,17 +12,18 @@ const listaDestinos = new Array(
 
 const idadeComprador = 15
 const acompanhado = false
+let passagem = false
 
 if(idadeComprador >= 18 || acompanhado == true){
     console.log("Selecione qual o destino: \n")
     console.log(listaDestinos)
+    passagem = true
 }else {
     console.log(`Você não tem idade suficiente para acessar este sistema! \n \n`)
+    passagem = false
 }
 
 //Embarque
-
-const passagem = true
 
 console.log("Embarque: \n")
 
